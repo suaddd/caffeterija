@@ -27,7 +27,7 @@ variables
 body {
     font-family: var(--ff-primary);
     background: var(--clr-whith);
-    color: var(--clr-grey-1);
+    /*color: var(--clr-grey-1);*/
     line-height: 1.5;
     font-size: 0.875rem;
 }
@@ -119,4 +119,57 @@ header
 .btn:hover {
     color: var(--clr-primary);
     background: var(--clr-primary-light);
+}
+.line {
+    height: 6px;
+    border: 0;
+    background: linear-gradient(to right,
+    var(--clr-primary),
+    var(--clr-primary-light),
+    var(--clr-whith));
+}
+/* skills */
+.skills {
+    background: var(--clr-grey-10);
+}
+
+.skill {
+    padding: 2.5rem 0;
+    text-align: center;
+    transition: var(--transition);
+}
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    transition: var(--transition);
+    display: inline-block;
+    color: var(--clr-primary);
+}
+.skill-title {
+    color: red;
+}
+.skill-text {
+    color: var(--clr-grey-5);
+    max-width: 17rem;
+    margin: 0 auto;
+}
+.skill:hover {
+    background: #f1f5f8;
+    box-shadow: 0 2px var(--clr-primary);
+}
+.skill:hover .skill-icon {
+    transform: translateY(-15px);
+}
+@media screen and (min-width:576px) {
+    .skill {
+        float:left;
+        width: 50%;
+    }
+}
+@media screen and (min-width:1200px) {
+    .skill {
+        float: left;
+        width: 25%;
+    }         
+    
 }
