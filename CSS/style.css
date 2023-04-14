@@ -173,3 +173,44 @@ header
     }         
     
 }
+/*==about==*/
+.about-img, .about-info {
+    padding: 2rem 0;
+}
+.about-picture-container {
+    background: var(--clr-primary);
+    border: 0.5rem solid var(--clr-primary);
+    max-width: 40rem;
+    overflow: hidden;
+}
+.about-picture {
+    transition: var(--transition);
+}
+.about-picture-container:hover .about-picture {
+    opacity: 0.5;
+    transform: scale(1.5);
+}
+.about-text {
+    max-width: 26rem;
+    color: var(--clr-grey-5);
+}
+.section-title h3 {
+    font-family: var(--ff-secondary);
+    color: var(--clr-primary);
+    letter-spacing: 1rem;
+}
+.section-title h2 {
+    font-family: var(--ff-primary);
+    color: var(--clr-grey-1);
+    letter-spacing: 1rem;
+}
+@media  screen and (min-width:475px) {
+    .about-img, .about-info {
+        float: left;
+        width: 50%;
+    }
+    .about-info {
+        padding-left: 2rem;
+    }
+}
+/*==end about==*/
